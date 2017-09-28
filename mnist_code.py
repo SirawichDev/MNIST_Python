@@ -2,7 +2,7 @@ import get_data
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
-
+number_of_points = 200
 x_point = []
 y_point = []
 a = 0.22
