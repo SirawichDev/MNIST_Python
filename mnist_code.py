@@ -1,6 +1,7 @@
 import get_data
 import numpy as np
 import matplotlib.pyplot as plt
+import tensorflow as tf
 
 cost_function = tf.reduce_mean(tf.square(y - y_point))
 optimizer = tf.train.GradientDescentOptimizer(0.5)
