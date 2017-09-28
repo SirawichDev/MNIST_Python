@@ -2,6 +2,9 @@ import get_data
 import numpy as np
 import matplotlib.pyplot as plt
 
+cost_function = tf.reduce_mean(tf.square(y - y_point))
+optimizer = tf.train.GradientDescentOptimizer(0.5)
+train = optimizer.minimize(cost_function)
 mnist_images = get_data.read_data_sets("MNIST_data/", one_hot=False)
 train.next_batch(10)
 pixels,real_values = mnist_images.train.next_batch(10)
